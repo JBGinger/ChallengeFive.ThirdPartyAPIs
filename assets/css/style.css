@@ -67,9 +67,13 @@ textarea{
   background-color: #06AED5;
   color: white;
   width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
+  background-color: royalblue;
   transition: all .3s ease-in-out;
 }
