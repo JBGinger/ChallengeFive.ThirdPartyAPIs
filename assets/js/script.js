@@ -1,10 +1,6 @@
-var today = new Date();
-var dayOfWeek = new Date().toLocaleDateString('en', {weekday:'long'});
-console.log(dayOfWeek);
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0');
-var yyyy = today.getFullYear();
-today = dayOfWeek + ', ' + mm + '/' + dd + '/' + yyyy;
-
+//Set current date at the top of the page.
+var today = moment().format('dddd, MMMM Do YYYY');
 currentDate = document.getElementById("currentDay");
 currentDate.innerHTML = today;
+
+//Save text in each text area
